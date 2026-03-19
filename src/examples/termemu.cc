@@ -58,6 +58,8 @@
 #include <util.h>
 #elif HAVE_LIBUTIL_H
 #include <libutil.h>
+#elif defined(__QNX__)
+#include <unix.h>
 #endif
 
 #include "parser.h"

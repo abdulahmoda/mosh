@@ -73,6 +73,8 @@
 #include <pty.h>
 #elif HAVE_UTIL_H
 #include <util.h>
+#elif defined(__QNX__)
+#include <unix.h>
 #endif
 
 #if FORKPTY_IN_LIBUTIL
