@@ -44,6 +44,9 @@
 
 #if HAVE_PTY_H
 #include <pty.h>
+#elif defined(__QNX__)
+#include <unix.h>
+#include <sys/ioctl.h> 
 #elif HAVE_UTIL_H
 #include <util.h>
 #endif
